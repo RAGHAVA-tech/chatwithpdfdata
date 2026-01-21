@@ -34,7 +34,7 @@ def get_pdf_text(pdf_docs):
 
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(
-        separator="\n",
+        #separator="\n",
         chunk_size=500,
         chunk_overlap=20,
         length_function=len
@@ -131,6 +131,7 @@ if st.session_state.processComplete:
 # Display initial instructions
 else:
     st.write("👈 Upload your PDFs in the sidebar to get started!")
+
 
 
 
